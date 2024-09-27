@@ -1,0 +1,214 @@
+.bring {
+  background: #f4f6f8;
+}
+
+.bring > div {
+  padding-top: 100px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bring_top {
+  text-align: start;
+  h4 {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 123%;
+    color: #000;
+  }
+  h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+  }
+}
+
+.bring_card {
+  border-radius: 20px;
+  padding: 20px 24px;
+  width: 100%;
+  height: 721px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .bring_card_top {
+    img {
+      width: 100%;
+    }
+  }
+
+  .bring_card_bottom {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      text-align: start;
+      color: #000;
+    }
+    p {
+      display: flex;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      color: rgba(0, 0, 0, 0.5);
+      img {
+        width: 55%;
+        height: 1px;
+        align-self: self-end;
+      }
+      span {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: right;
+        color: #000;
+      }
+    }
+  }
+
+  .bring_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      color: #000;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      text-align: right;
+      color: #000;
+    }
+  }
+
+  button {
+    border-radius: 8px;
+    padding: 8px 32px;
+    width: 100%;
+    height: 56px;
+    background: #fa002c;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+  }
+}
+
+@media (max-width: 420px) {
+  .bring {
+    margin-top: 40px;
+    background: #f4f6f8;
+  }
+  .bring_top {
+    text-align: start;
+    h4 {
+      color: #000;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 103%;
+    }
+    h5 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 117%;
+      color: #000;
+    }
+  }
+
+  .bring_card {
+    border-radius: 20px;
+    padding: 20px 24px;
+    width: 100%;
+    height: 721px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .bring_card_top {
+      img {
+        width: 100%;
+      }
+    }
+
+    .bring_card_bottom {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: start;
+        color: #000;
+      }
+      p {
+        display: flex;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 125%;
+        color: rgba(0, 0, 0, 0.5);
+        img {
+          width: 55%;
+          height: 1px;
+          align-self: self-end;
+        }
+        span {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 120%;
+          text-align: right;
+          color: #000;
+        }
+      }
+    }
+
+    .bring_flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 105%;
+        color: #000;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 90%;
+        text-align: right;
+        color: #000;
+      }
+    }
+
+    button {
+      border-radius: 8px;
+      padding: 8px 32px;
+      width: 100%;
+      height: 56px;
+      background: #fa002c;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.cars {
+    margin-top: 80px;
+    background: #f4f6f8;
+    padding: 90px 0;
+  }
+  
+  .cars__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+    h2 {
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 123%;
+      text-align: center;
+    }
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 133%;
+      text-align: center;
+      color: #000;
+    }
+    button {
+      border-radius: 8px;
+      width: 235px;
+      height: 56px;
+      background: #f50e30;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      text-align: center;
+      color: #fff;
+      transition: 0.4s;
+      &:hover {
+        background-color: transparent;
+        color: #f50e30;
+        box-shadow: 0 0 5px #f50e30;
+      }
+    }
+  }
+  
+  .cars__border {
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    max-width: 411px;
+    height: 264px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 35px;
+  
+    h3 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 122%;
+      color: #000;
+      max-width: 300px;
+    }
+  
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: rgba(0, 0, 0, 0.8);
+      padding-top: 10px;
+      max-width: 300px;
+    }
+  }
+  
+  .imgg img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40%;
+  }
+  
+  .imggg img {
+    width: 25%;
+  }
+  
+  .cars__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 20px;
+  }
+  
+  @media (max-width: 1045px) {
+    .cars__bottom {
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    .cars__top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+      button {
+        width: 190px;
+        height: 46px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cars__top {
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 14px;
+      }
+      button {
+        width: 160px;
+        height: 36px;
+        font-size: 12px;
+      }
+    }
+    .cars {
+      margin-top: 30px;
+      padding: 60px 0;
+    }
+  
+    .cars__border {
+      padding: 30px;
+  
+      h3 {
+        font-size: 30px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 345px) {
+    .cars__top {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 12px;
+      }
+      button {
+        width: 140px;
+        height: 30px;
+        font-size: 11px;
+      }
+    }
+    .cars {
+      margin-top: 20px;
+      padding: 40px 0;
+    }
+  }
+  
+  .btn {
+    border-radius: 8px;
+    width: 235px;
+    height: 56px;
+    background: #f50e30;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+    transition: 0.4s;
+    &:hover {
+      background-color: transparent;
+      color: #f50e30;
+      box-shadow: 0 0 5px #f50e30;
+    }
+  }
+  

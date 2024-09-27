@@ -1,0 +1,160 @@
+.header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav__links,
+  .nav__sosials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav__links--item {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #000;
+    transition: 0.4s;
+    &:hover {
+      color: #f50e30;
+      border-bottom: 2px solid #f50e30;
+    }
+  }
+  
+  .sosial {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .sosial__bord {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    &:hover {
+      background-color: transparent;
+      a {
+        i {
+          color: #000;
+        }
+      }
+      box-shadow: 0 0 7px #000;
+    }
+  
+    a {
+      i {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+      }
+    }
+  }
+  
+  .nav__number {
+    display: block;
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+    }
+  }
+  .nav__number2 {
+    display: none;
+  }
+  
+  @media (max-width: 1105px) {
+    .nav__links,
+    .nav__sosials {
+      gap: 15px;
+    }
+  
+    .sosial__bord {
+      width: 30px;
+      height: 30px;
+      a {
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+    .nav__number {
+      a {
+        font-size: 14px;
+      }
+    }
+    .nav__links--item {
+      font-size: 14px;
+    }
+  }
+  
+  #open,
+  #close,
+  #check {
+    display: none;
+    font-size: 22px;
+  }
+  
+  @media (max-width: 880px) {
+    .nav__links {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      z-index: 29;
+      transition: 0.4s;
+      background-color: aliceblue;
+    }
+    .nav__number {
+      display: none;
+    }
+    .nav__number2 {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    #open,
+    #close {
+      display: block;
+    }
+  
+    #close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    #check:checked ~ .nav__links {
+      left: 0;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .sosial__bord {
+      width: 25px;
+      height: 25px;
+      a {
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+    .sosial {
+      gap: 10px;
+    }
+  }
+  
